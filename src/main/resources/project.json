@@ -1,0 +1,305 @@
+{
+  "name" : "Coyote jan",
+  "modified" : "2019-03-03T19:16:19Z",
+  "time_signature" : {
+    "beats" : 4,
+    "divisions" : 4
+  },
+  "id" : "3593DEA3-C69A-4311-83B3-5353AE5F681A",
+  "created" : "2019-01-06T03:33:37Z",
+  "tempo" : 120,
+  "project_file_version" : 1,
+  "dirty" : false,
+  "tracks" : [
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 11097344,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 11097344,
+          "start_frame_in_timeline" : 0,
+          "id" : "34BC5F6B-C77E-4286-A1A4-FC8A533FBD50",
+          "file_name" : "5B3F7CD1-F5C5-4C74-BD47-A89D2559C7B4.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "4AF2F01F-86AB-470A-A3D9-12F50C74605F",
+      "mute" : false,
+      "pan" : -0.029556632041931152,
+      "color_index" : 0,
+      "gain" : 6
+    },
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 2903296,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 2565264,
+          "start_frame_in_timeline" : 146627,
+          "id" : "CF7B11A0-9A04-498A-B989-854A66652F20",
+          "file_name" : "15D2E752-B416-48A0-A004-D012E2382C01.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1740032,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1740032,
+          "start_frame_in_timeline" : 2711891,
+          "id" : "2A3AF340-FE8A-4E0E-A2A5-2066FDF80318",
+          "file_name" : "DA6EB4E0-4D2F-4A5F-B08C-2DA8230188B4.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1722368,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1722368,
+          "start_frame_in_timeline" : 5637879,
+          "id" : "56C5D30C-58A5-4590-B899-29213C850AB9",
+          "file_name" : "DF1E146D-040E-4731-B4DA-FE230DBEEDDC.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "027243E6-A3BA-4FF2-B9D2-DE004CF61F7C",
+      "mute" : false,
+      "pan" : -0.049261152744293213,
+      "color_index" : 1,
+      "gain" : 5.7443556785583496
+    },
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 1687296,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1687296,
+          "start_frame_in_timeline" : 2765415,
+          "id" : "1C6C779B-B2F3-470E-A64A-F6132E9AE1F5",
+          "file_name" : "55603159-C8C8-4D26-ABD6-BF96AE3EC47B.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1794304,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1794304,
+          "start_frame_in_timeline" : 5584355,
+          "id" : "24FEBAAC-C835-4134-87CD-A4E177C8F832",
+          "file_name" : "42695148-8FE6-4BB5-B76D-11FAF60BA344.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "FB5C8279-6C50-4E5A-9340-6235638CE87B",
+      "mute" : false,
+      "pan" : 0.014778375625610352,
+      "color_index" : 2,
+      "gain" : 4.1568241119384766
+    },
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 1118464,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1118464,
+          "start_frame_in_timeline" : 4870699,
+          "id" : "3D6E2EC2-8B12-4F3D-AA3F-86BEECC39B45",
+          "file_name" : "BA1D248D-0245-455E-83B6-266B67D62485.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1008384,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1008384,
+          "start_frame_in_timeline" : 10169592,
+          "id" : "E0A1C13A-7DBB-4267-81F9-5A729C5D281B",
+          "file_name" : "AC18BF1B-189E-43E0-AC6C-E3DDC21FA6F9.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1377280,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1377280,
+          "start_frame_in_timeline" : 1510224,
+          "id" : "CF836D5A-ACBC-4AFD-827F-EE2E412F3E9B",
+          "file_name" : "B7A6924B-7E60-4B59-A9AD-BE89EF6AC874.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "F5070EBD-94F5-4CCC-9DA4-FAE11C11C195",
+      "mute" : true,
+      "pan" : -0.019704461097717285,
+      "color_index" : 3,
+      "gain" : 5.0341434478759766
+    },
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 1647872,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1647872,
+          "start_frame_in_timeline" : 2731181,
+          "id" : "20F5DB18-1C97-4837-9B3D-A8FEE3887B2C",
+          "file_name" : "22894D7D-23EA-447A-9215-07B6F55C4ECD.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1503744,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1503744,
+          "start_frame_in_timeline" : 5816293,
+          "id" : "46F8EAB3-008B-4ED5-BF1F-FCDB0FED8C5C",
+          "file_name" : "88307C51-3F41-43CA-B53B-B9AD040B8133.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1166848,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1166848,
+          "start_frame_in_timeline" : 8831488,
+          "id" : "6FB98080-7FD3-43E5-A6C5-6C4413FF9EA2",
+          "file_name" : "0A7B4898-4DAE-405D-8B6E-A1F62DABD4B2.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "3ED00B28-73FC-44B4-A18C-D3669E0DBBB7",
+      "mute" : true,
+      "pan" : 0,
+      "color_index" : 4,
+      "gain" : 0
+    },
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 1469952,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1469952,
+          "start_frame_in_timeline" : 2943829,
+          "id" : "2B5C9C9B-780D-4A66-BB32-378B21A41C03",
+          "file_name" : "320F64B7-F40E-490D-B685-ADADAADD1D17.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1510912,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1510912,
+          "start_frame_in_timeline" : 5780610,
+          "id" : "1F017561-DCF4-4EBD-9F03-907E8C88B887",
+          "file_name" : "D6CB4AB1-82F6-4E83-8B54-43E0BAA29849.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1228032,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1228032,
+          "start_frame_in_timeline" : 8890078,
+          "id" : "16973766-6338-4637-BBA4-73E7EA8543F1",
+          "file_name" : "1A9E7DD9-AB17-4B6B-B8AA-279D441A5A51.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "E380463D-CCA0-41B0-92D3-CCA113B9FAC1",
+      "mute" : false,
+      "pan" : 0,
+      "color_index" : 5,
+      "gain" : 0
+    },
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 872960,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 872960,
+          "start_frame_in_timeline" : 4442506,
+          "id" : "EFF371C0-2610-4AF7-BF82-64A2BB9F0A5F",
+          "file_name" : "556FE719-1BEE-4C1B-B073-B25714AC6F98.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1473792,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1473792,
+          "start_frame_in_timeline" : 8849329,
+          "id" : "07771019-51C6-437D-ADAA-19819A16BE90",
+          "file_name" : "E1937ACE-6DE6-40CC-BA6E-BD66C0EDB312.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 306944,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 306944,
+          "start_frame_in_timeline" : 2237681,
+          "id" : "1B23D960-1BE5-496D-B42A-A1E013715DE5",
+          "file_name" : "CCAA2B89-1414-4DAE-BF8F-5D5EA1E26E0D.flac",
+          "start_frame_in_file" : 45216
+        },
+        {
+          "file_duration_frames" : 823040,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 823040,
+          "start_frame_in_timeline" : 1414641,
+          "id" : "5B6B2C22-895F-4DA1-9C29-64D872339367",
+          "file_name" : "DC5754BD-80F3-4407-8048-10C408B6DD58.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 420864,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 420864,
+          "start_frame_in_timeline" : 2664700,
+          "id" : "02E94F60-4AC2-44AF-812E-5544E0FA783E",
+          "file_name" : "78C694E7-141C-40A0-BC16-07032378C38A.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "7A345ACB-3FFE-478E-ACAF-849F264441CE",
+      "mute" : true,
+      "pan" : 0,
+      "color_index" : 6,
+      "gain" : 0
+    },
+    {
+      "clips" : [
+        {
+          "file_duration_frames" : 1829888,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1829888,
+          "start_frame_in_timeline" : 8795805,
+          "id" : "7A64ABDB-413C-47E0-9EC2-36550E2586BF",
+          "file_name" : "47283756-5B84-4B4D-9039-663AF2B75DBC.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 1915392,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 1854815,
+          "start_frame_in_timeline" : 1025138,
+          "id" : "5BA81372-3CE6-4A09-8134-8A93AFB9C2B4",
+          "file_name" : "AC4251CA-B385-456A-942E-216646CFBD3C.flac",
+          "start_frame_in_file" : 0
+        },
+        {
+          "file_duration_frames" : 165376,
+          "sample_rate" : 48000,
+          "end_frame_in_file" : 165376,
+          "start_frame_in_timeline" : 2879953,
+          "id" : "CB7936B0-E736-4371-BC05-10D1DAEFC1E4",
+          "file_name" : "80EC1BB5-38D1-4386-92CB-16184D41FBDE.flac",
+          "start_frame_in_file" : 0
+        }
+      ],
+      "stereoize" : true,
+      "id" : "5364FF7E-7BBD-40D9-8E56-9F216F226C9C",
+      "mute" : false,
+      "pan" : 0,
+      "color_index" : 7,
+      "gain" : 0
+    }
+  ],
+  "num_tracks" : 8,
+  "duration" : 232.87450000000001,
+  "metronome_on" : false
+}

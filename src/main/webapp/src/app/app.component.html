@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="project">
 
   <br/>
 
@@ -7,6 +7,44 @@
 
 
   <br/>
+
+  <h1>{{project['name']}}</h1>
+  <small>Created: {{project['created'] | date:medium}}</small><br/>
+  <small>Last modified: {{project['created'] | date:medium}}</small>
+
+  <hr/>
+
+  <button class="btn btn-outline-primary" (click)="playAll()">Play All!</button>
+  <br/><br/>
+
+  <div *ngFor="let track of project['tracks']">
+    <!--<br/>-->
+    <!--<h3>Track: {{track['id']}}</h3>-->
+    <!--<small>Gain: {{track['gain']}}</small><br/>-->
+    <!--<small>Pan: {{track['pan']}}</small><br/>-->
+    <!--<small>Mute: {{track['mute']}}</small><br/>-->
+    <!--<br/>-->
+    <div *ngFor="let clip of track['clips']">
+      <!--<b>Clip {{clip['file_name']}}</b><br/>-->
+
+      <div [attr.id]="'waveform-'+clip['id']"></div>
+
+      <!--<button class="m-1 btn btn-sm btn-success" (click)="playClip(clip['id'])">Play</button>-->
+      <!--<button class="m-1 btn btn-sm btn-dark" (click)="pauseClip(clip['id'])">Pause</button>-->
+      <!--<button class="m-1 btn btn-sm btn-danger" (click)="stopClip(clip['id'])">Stop</button>-->
+      <!--<br/>-->
+
+      <!--<small>Start frame in file: {{clip['start_frame_in_file']}}</small><br/>-->
+      <!--<small>Start frame in timeline: {{clip['start_frame_in_timeline']}}</small><br/>-->
+      <!--<small>End frame in file: {{clip['end_frame_in_file']}}</small><br/>-->
+      <!--<small>File duration frame: {{clip['file_duration_frames']}}</small><br/>-->
+      <!--<small>Sample rate: {{clip['sample_rate']}}</small>-->
+
+
+
+    </div>
+    <br/>
+  </div>
 
 
 </div>
