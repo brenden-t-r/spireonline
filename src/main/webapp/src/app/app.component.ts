@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import WaveSurfer from 'wavesurfer.js';
+//import { WaveformPlaylist } from 'waveform-playlist';
+//import { WaveformPlaylist } from '@node/waveform-playlist';
+
+//var WaveformPlaylist = require('waveform-playlist');
 
 @Component({
   selector: 'app-root',
@@ -11,73 +14,64 @@ export class AppComponent implements OnInit {
   project: any;
 
   ngOnInit() {
-    // var wavesurfer = WaveSurfer.create({
-    //   container: '#waveform',
-    //   waveColor: 'violet',
-    //   progressColor: 'purple'
-    // });
-
-    // wavesurfer.load('https://srv-file2.gofile.io/download/jKE1Xq/test.flac');
-    //
-    // wavesurfer.on('ready', function () {
-    //   wavesurfer.play();
-    // });
-
     this.project = JSON.parse(this.json);
-
     console.log(this.project);
+    this.createMultitrackPlayer();
+  }
+
+  private createMultitrackPlayer() {
+    const WaveformPlaylist = require('waveform-playlist');
+
+    var playlist = WaveformPlaylist.init({
+      // samplesPerPixel: 10000,
+      sampleRate: 48000,
+      container: document.getElementById('playlist'),
+      state: 'cursor',
+      controls: {
+        show: true,
+        width: 200
+      },
+      // zoomLevels: [3000, 5000, 10000, 20000]
+    });
+
+
+
+    let tracks = [];
+    let longestTrackLength = 0;
+    for (let track of this.project['tracks']) {
+      console.log(track);
+
+      for (let clip of track['clips']) {
+        tracks.push({
+          src: 'http://localhost:4200/assets/CoyoteSpire/' + clip['file_name'],
+          name: clip['id'],
+          start: clip['start_frame_in_timeline']/48000,
+          muted: track['mute'],
+          // gain: track['gain'] / 10,
+        })
+      }
+
+      // tracks.push({
+      //   src: 'http://localhost:4200/assets/CoyoteSpire/' + clip['file_name'],
+      //   name: clip['id'],
+      //   start: clip['start_frame_in_timeline']/48000,
+      //   //gain: track['gain'],
+      // })
+    }
+
+    playlist.load(tracks).then(function() {
+      // can do stuff with the playlist.
+    });
+
+    const ee = playlist.getEventEmitter();
 
     setTimeout(() => {
-      this.createWaveforms();
+      //ee.emit('play');
+    }, 3000);
 
-      setTimeout(() => {
-
-      }, 2000);
-    }, 1000);
 
   }
 
-
-  waveformsByClipId = {};
-
-  private createWaveforms() {
-    for (let track of this.project['tracks']) {
-      for (let clip of track['clips']) {
-        let clipUrl = "http://localhost:4200/assets/CoyoteSpire/" + clip['file_name'];
-        let clipDiv = "#waveform-" + clip['id'];
-        console.log(clipUrl);
-        console.log(clipDiv);
-
-        var wavesurfer: WaveSurfer = WaveSurfer.create({
-          container: clipDiv,
-          waveColor: 'violet',
-          progressColor: 'purple'
-        });
-
-        wavesurfer.load(clipUrl);
-
-        this.waveformsByClipId[clip['id']] = wavesurfer;
-      }
-    }
-  }
-
-  public playClip(clipId: string) {
-    this.waveformsByClipId[clipId].play();
-  }
-
-  public pauseClip(clipId: string) {
-    this.waveformsByClipId[clipId].pause();
-  }
-
-  public stopClip(clipId: string) {
-    this.waveformsByClipId[clipId].stop();
-  }
-
-  public playAll() {
-    for (let key of Object.keys(this.waveformsByClipId)) {
-      this.waveformsByClipId[key].play();
-    }
-  }
 
   json = "{\n" +
     "  \"name\" : \"Coyote jan\",\n" +
