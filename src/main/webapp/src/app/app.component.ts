@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 //import { WaveformPlaylist } from 'waveform-playlist';
 //import { WaveformPlaylist } from '@node/waveform-playlist';
 
@@ -13,10 +13,30 @@ export class AppComponent implements OnInit {
 
   project: any;
 
+  player: any;
+
   ngOnInit() {
     this.project = JSON.parse(this.json);
     console.log(this.project);
     this.createMultitrackPlayer();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event?) {
+    //this.screenWidth = window.innerWidth;
+
+    const WaveformPlaylist = require('waveform-playlist');
+    this.player = WaveformPlaylist.init({
+      samplesPerPixel: 20000,
+      sampleRate: 48000,
+      container: document.getElementById('playlist'),
+      state: 'cursor',
+      controls: {
+        show: true,
+        width: 200
+      },
+      zoomLevels: [3000, 5000, 10000, 20000]
+    });
   }
 
   private createMultitrackPlayer() {
@@ -33,6 +53,8 @@ export class AppComponent implements OnInit {
       },
       // zoomLevels: [3000, 5000, 10000, 20000]
     });
+
+    this.player = playlist;
 
 
 
